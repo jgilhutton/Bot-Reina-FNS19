@@ -4,7 +4,7 @@ Te la hago corta:
 
 # Considerandos:
 
-Que el martes 5 de febrero del 2019 se habilitó la votación para elejir la reina de la fiesta nacional del sol, en San Juan;
+Que el martes 5 de febrero del 2019 se habilitó la votación para elegir la reina de la fiesta nacional del sol, en San Juan;
 
 Que la votación es a través de los diarios digitales de la provincia;
 

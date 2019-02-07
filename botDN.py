@@ -28,7 +28,7 @@ def vote():
         resultados = findall('(?si)(?P<departamento>(?<=\<h3 \>).+?(?=\<\\\/h3))(?:.*?)(?P<porcentaje>(?<=voto_resultado\\\\">)\d+%(?=\<\\\\/span>))',res.text)
         resultados = list(set(resultados))
     except Exception as e:
-        print(e)
+        print('[-] DN %s'%e)
         return res.status_code,e 
     return res.status_code,resultados
 

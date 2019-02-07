@@ -27,7 +27,7 @@ def vote():
     try:
         resultados = search('¡¡Muchas gracias por votar!!',res.text).group()
     except Exception as e:
-        print(e)
+        print('[-] DM %s'%e)
         return res.status_code,e 
     return res.status_code,resultados
 

@@ -1,4 +1,3 @@
-# FNS19-Bot-Reina
 Te la hago corta:
   Bot que vota por la candidata de Valle Fértil para reina del sol en la FNS19
 

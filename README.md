@@ -1,5 +1,5 @@
 # FNS19-Bot-Reina
->Te la hago corta:
+Te la hago corta:
   Bot que vota por la candidata de Valle Fértil para reina del sol en la FNS19
 
 # Considerandos:
@@ -28,5 +28,5 @@ Art4: Llevar un conteo de todos los votos emitidos por este Bot y compararlo con
 Art5: Denunciar por el medio que se crea conveniente, si alguno de los medios digitales que permite ver los resultados de la 
 votación, vulneró el conteo de votos. Estos medios son Diario El Zonda y DameNoticias.
 
-Art6: Continuar creando este tipo de programas en tanto las autoridades sanjuaninas permita, de forma empesinada, implementar este tipo de "soluciones" para la votación de la reina del sol.
+Art6: Continuar creando este tipo de programas en tanto las autoridades sanjuaninas permita, de forma empecinada, implementar este tipo de "soluciones" para la votación de la reina del sol.
 

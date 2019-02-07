@@ -38,9 +38,10 @@ Argumentos: DDC, DH, DM, DN, ZONDA, S8, DLP
 
 # Predicciones:
 Al día 7 de febrero del 2019, mis predicciones para ganadora de la votación electrónica son:
+
 1. Valle Fértil
 2. Chimbas
-
+-
 1. Chimbas
 2. Valle Fértil
 

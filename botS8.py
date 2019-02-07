@@ -30,7 +30,7 @@ def vote():
     try:
         resultados = search('(?<={"status":")ok(?="})',res.text).group()
     except Exception as e:
-        print(e)
+        print('[-] S8 %s'%e)
         return res.status_code,e 
     return res.status_code,resultados
 

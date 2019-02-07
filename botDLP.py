@@ -25,7 +25,7 @@ def vote():
     try:
         resultados = search('¡Gracias por votar!',res.text).group()
     except Exception as e:
-        print(e)
+        print('[-] DLP: ',e)
         return res.status_code,e 
     return res.status_code,resultados
 
@@ -50,7 +50,7 @@ def getTotalVotes():
     try:
         cantidad = search('(?<={"count":)\d+',res.text).group()
     except Exception as e:
-        print('[-] DLP: 'e)
+        print('[-] DLP: ',e)
         return res.status_code,e 
     return res.status_code,cantidad  
 

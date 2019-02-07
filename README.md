@@ -36,6 +36,16 @@ Para votar en los otros diarios:
 Argumentos: DDC, DH, DM, DN, ZONDA, S8, DLP
 ```
 
+# Predicciones:
+Al día 7 de febrero del 2019, mis predicciones para ganadora de la votación electrónica son:
+1. Valle Fértil
+2. Chimbas
+
+1. Chimbas
+2. Valle Fértil
+
+Por si no lo saben, a menos que todo el pueblo chimbero esté votando todo el día todos los días por su candidata, alguien en chimbas también implementó un bot de votación.
+
 # Nota final:
 
 La ganadora de la votación a través de los diarios suma 2 votos la noche de la "coronación". Esta cantidad no es suficiente como para marcar una diferencia en los números finales, pero este Bot es un perfecto experimento para ver si, marcando tendencia a través de los medios digitales, se puede influenciar a los jurados en la noche de la votación.

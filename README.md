@@ -37,3 +37,12 @@ Para votar en los otros diarios:
 Argumentos: DDC, DH, DM, DN, ZONDA, S8, DLP
 ```
 
+# Nota final:
+
+La ganadora de la votación a través de los diarios suma 2 votos la noche de la "coronación". Esta cantidad no es suficiente como para marcar una diferencia en los números finales, pero este Bot es un perfecto experimento para ver si, marcando tendencia a través de los medios digitales, se puede influenciar a los jurados en la noche de la votación.
+
+Veremos.
+
+Llega a ganar la de Valle Fértil y me voy a la mierda.
+
+jgilhutton.

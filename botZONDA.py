@@ -28,7 +28,7 @@ def vote():
         resultados = findall('(?si)(?P<departamento>(?<=itemprop="text"\>).+?(?=\</div\>\<div class="totalpoll-choice-votes))(?:.*?)(?P<porcentaje>(?<=bar " style="width: ).+?(?=;"\>\</div\>\<div))',res.text)
         resultados = list(set(resultados))
     except Exception as e:
-        print('[-] ZONDA: 'e)
+        print('[-] ZONDA: ',e)
         return res.status_code,e 
     return res.status_code,resultados
 

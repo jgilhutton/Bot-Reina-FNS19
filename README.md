@@ -50,6 +50,15 @@ Por si no lo saben, a menos que todo el pueblo chimbero esté votando todo el d�
 # Curiosidades:
 - Al día 7 de febrero del 2019, el sitio web del Diario La ventana, http://diariolaventana.com, tiene implementada la votación de forma tal que cada voto emitido no tiene correspondencia con ninguna de las candidatas.
 En el código HTML de la encuesta, cada candidata debería tener un Id asociado con el cuál enviarle la petición de voto al servidor y así sumar +1 a la opción correspondiente a dicho Id. En la actualidad, en la encuesta de dicho diario, todas las candidatas tienen el mismo Id: "VOTAR". En definitiva, no importa en qué opción haga click el usuario; al Diario La Ventana lo único que le llega es un mensaje que dice "VOTAR".
+El código:
+```
+<td><div class="dep"></div><img src="thumbs/18.jpg" width="150" height="150" /><div class="nom">Valle Fértil<br>Ana Paula Vilanova</div><div class="vot"><input name="voto" type="submit" value="VOTAR" title="VOTAR" /></div></td>
+```
+debería ser, por ejemplo:
+```
+<td><div class="dep"></div><img src="thumbs/18.jpg" width="150" height="150" /><div class="nom">Valle Fértil<br>Ana Paula Vilanova</div><div class="vot"><input name="voto" type="submit" value="18" title="VOTAR" /></div></td>
+```
+- ...
 
 # Nota final:
 

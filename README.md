@@ -53,11 +53,11 @@ En el código HTML de la encuesta, cada candidata debería tener un Id asociado 
 
 El código:
 ```
-<td><div class="dep"></div><img src="thumbs/18.jpg" width="150" height="150" /><div class="nom">Valle Fértil<br>Ana Paula Vilanova</div><div class="vot"><input name="voto" type="submit" value="VOTAR" title="VOTAR" /></div></td>
+<input name="voto" type="submit" value="VOTAR" title="VOTAR" />
 ```
 debería ser, por ejemplo:
 ```
-<td><div class="dep"></div><img src="thumbs/18.jpg" width="150" height="150" /><div class="nom">Valle Fértil<br>Ana Paula Vilanova</div><div class="vot"><input name="voto" type="submit" **value="18"** title="VOTAR" /></div></td>
+<input name="voto" type="submit" value="18" title="VOTAR" />
 ```
 
 - ...

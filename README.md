@@ -21,19 +21,12 @@ votación, vulneró el conteo de votos. Estos medios son Diario El Zonda y DameN
 - Art6: Continuar creando este tipo de programas en tanto las autoridades sanjuaninas permitan, de forma empecinada, implementar este tipo de "soluciones" para la votación de la reina del sol.
 
 # Modo de uso:
-Votar en todos los diarios:
 ```
-$> python überBot.py all
-```
-
-Votar en Diario de Cuyo: 
-```
-$> python überBot.py DDC
-```
-
-Para votar en los otros diarios: 
-```
-Argumentos: DDC, DH, DM, DN, ZONDA, S8, DLP
+$> python überBot.py all # Votar en todos los diarios (10 votos por diario)
+$> python überBot.py DDC # Votar en un diario en especial (Ej: Diario de Cuyo)
+$> pthon überBot.py DDC DH DM DN ZONDA S8 DLP # Para votar en los otros diarios
+$> python botZONDA.py # Para hacer una prueba de 2 votos en algún diario (Ej: El Zonda)
+$> python botDDC.py botDN.py botDM.py botDH.py botDLP.py botS8.py # Para hacer la prueba con los demas diarios
 ```
 
 # Predicciones:

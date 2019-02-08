@@ -1,12 +1,12 @@
 Te la hago corta:
   Bot que vota por la candidata de Valle Fértil para reina del sol en la FNS19
 
-# Considerandos:
+# Considerando:
 
 - Que el martes 5 de febrero del 2019 se habilitó la votación para elegir la reina de la fiesta nacional del sol, en San Juan;
-- Que la votación es a través de los diarios digitales de la provincia;
-- Que ninguno de los diarios digitales incorporó un captcha para evitar spameo a la encuesta;
-- Que, a simple vista, la única medida para evitar más de un voto por persona es instalar una cookie en el browser del cliente;-
+- Que la votación se hace a través de los diarios digitales de la provincia;
+- Que ninguno de los medios incorporó un captcha para evitar spameo a la encuesta;
+- Que, a simple vista, la única medida implementada para evitar más de un voto por persona es la instalación de una cookie en el browser del cliente;
 - Que, como toda medida de seguridad del lado del cliente, la implementación de una cookie falla catastróficamente;
 
 # El Comité Provincial Contra la Pelotudez Informática de las Autoridades Sanjuaninas (CPCPIS) Resuelve:
@@ -17,8 +17,8 @@ Te la hago corta:
 - Art4: Llevar un conteo de todos los votos emitidos por este Bot y compararlo con el resultado final en el día de la 
 "coronación".
 - Art5: Denunciar por el medio que se crea conveniente, si alguno de los medios digitales que permite ver los resultados de la 
-votación, vulneró el conteo de votos. Estos medios son Diario El Zonda y DameNoticias.
-- Art6: Continuar creando este tipo de programas en tanto las autoridades sanjuaninas permita, de forma empecinada, implementar este tipo de "soluciones" para la votación de la reina del sol.
+votación, vulneró el conteo de votos. Estos medios son Diario El Zonda y DameNoticias (directamente) y Diario La Provincia (indirectamente).
+- Art6: Continuar creando este tipo de programas en tanto las autoridades sanjuaninas permitan, de forma empecinada, implementar este tipo de "soluciones" para la votación de la reina del sol.
 
 # Modo de uso:
 Votar en todos los diarios:
@@ -46,6 +46,10 @@ Al día 7 de febrero del 2019, mis predicciones para ganadora de la votación el
 2. Valle Fértil
 
 Por si no lo saben, a menos que todo el pueblo chimbero esté votando todo el día todos los días por su candidata, alguien en chimbas también implementó un bot de votación.
+
+# Curiosidades:
+- Al día 7 de febrero del 2019, el sitio web del Diario La ventana, http://diariolaventana.com, tiene implementada la votación de forma tal que cada voto emitido no tiene correspondencia con ninguna de las candidatas.
+En el código HTML de la encuesta, cada candidata debería tener un Id asociado con el cuál enviarle la petición de voto al servidor y así sumar +1 a la opción correspondiente a dicho Id. En la actualidad, en la encuesta de dicho diario, todas las candidatas tienen el mismo Id: "VOTAR". En definitiva, no importa en qué opción haga click el usuario; al Diario La Ventana lo único que le llega es un mensaje que dice "VOTAR".
 
 # Nota final:
 

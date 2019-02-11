@@ -1,11 +1,11 @@
-import botDDC,botDN,botDLP,botDM,botZONDA,botS8,botDH
+import botDDC,botDN,botDLP,botDM,botZONDA,botS8,botDH,botTPO
 import threading
 from time import sleep
 from sys import argv
 
 tanda = 1
 ts = []
-botList = [botDN,botZONDA,botDDC,botDLP,botDM,botS8,botDH]
+botList = [botDN,botZONDA,botDDC,botDLP,botDM,botS8,botDH,botTPO]
 
 class Th(threading.Thread):
     def __init__(self,Diario):
@@ -20,12 +20,12 @@ class Th(threading.Thread):
         
 try:
     while True:
-        threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH = map(Th,botList)
-        for thread in [threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH]:
+        threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH,threadTPO = map(Th,botList)
+        for thread in [threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH,threadTPO]:
             thread.printRes     = True
             thread.printStatus  = True
 
-        callDict = {'all':lambda: [callDict[x]() for x in callDict if x!='all'],'DDC':threadDDC.start,'DN':threadDN.start,'DLP':threadDLP.start,'DM':threadDM.start,'ZONDA':threadZONDA.start,'S8':threadS8.start,'DH':threadDH.start}
+        callDict = {'all':lambda: [callDict[x]() for x in callDict if x!='all'],'TPO':threadTPO.start,'DDC':threadDDC.start,'DN':threadDN.start,'DLP':threadDLP.start,'DM':threadDM.start,'ZONDA':threadZONDA.start,'S8':threadS8.start,'DH':threadDH.start}
 
         if len(argv) == 1 or not all([callDict.__contains__(x) for x in argv[1:]]):
             print('Argumentos:')

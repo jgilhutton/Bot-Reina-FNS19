@@ -13,35 +13,42 @@ class Th(threading.Thread):
         self.Diario      = Diario
         self.printStatus = False
         self.printRes    = False
+        self.cantidad    = None
     
     def run(self):
         ts.append(self)
-        self.Diario.main(printStatus=self.printStatus,printRes=self.printRes,cant=10)
+        self.Diario.main(printStatus=self.printStatus,printRes=self.printRes,cant=self.cantidad)
         
 try:
     while True:
         threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH,threadTPO = map(Th,botList)
+
+        callDict = {'all':lambda: [callDict[x]() for x in callDict if (x!='all' and not x.isdigit())],'TPO':threadTPO.start,'DDC':threadDDC.start,'DN':threadDN.start,'DLP':threadDLP.start,'DM':threadDM.start,'ZONDA':threadZONDA.start,'S8':threadS8.start,'DH':threadDH.start}
+        cantidad = [x for x in filter(lambda x: x.isdigit(),argv)]
+        
         for thread in [threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH,threadTPO]:
             thread.printRes     = True
             thread.printStatus  = True
-
-        callDict = {'all':lambda: [callDict[x]() for x in callDict if x!='all'],'TPO':threadTPO.start,'DDC':threadDDC.start,'DN':threadDN.start,'DLP':threadDLP.start,'DM':threadDM.start,'ZONDA':threadZONDA.start,'S8':threadS8.start,'DH':threadDH.start}
-
-        if len(argv) == 1 or not all([callDict.__contains__(x) for x in argv[1:]]):
+            thread.cantidad     = int(cantidad[0]) if cantidad else 10
+        
+        if len(argv) == 1 or not all([callDict.__contains__(x) for x in argv[1:] if not x.isdigit()]):
             print('Argumentos:')
             [print(x) for x in callDict]
             exit()
             
         print('Tanda %d...'%tanda)
-        for diario in argv[1:]:
+        for diario in filter(lambda x: not x.isdigit(),argv[1:]):
             callDict[diario]()
 
         for t in ts:
             t.join()
-        
+
         sleep(10)
         tanda+=1
         print('='*50)
+        
+        if cantidad:
+            exit()
 
 except KeyboardInterrupt:
     exit()

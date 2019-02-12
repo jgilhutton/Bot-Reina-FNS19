@@ -36,9 +36,9 @@ class Th(threading.Thread):
     
     def run(self):
         ts.append(self)
-        sleep(5)
         code,resultados = vote()
         if code != 200:
+            sleep(5)
             code,resultados = vote()
         if resultados and self.printRes and self.Id%self.cant == 0: self.printResultados(resultados)
 

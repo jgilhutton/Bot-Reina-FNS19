@@ -43,10 +43,10 @@ class Th(threading.Thread):
     
     def run(self):
         ts.append(self)
-        sleep(5)
 
         code,resultados = vote()
         if code != 200:
+            sleep(5)
             code,resultados = vote()
         if self.printRes and self.Id%self.cant == 0: self.printResultados(resultados)
 
@@ -56,7 +56,7 @@ def main(printStatus,printRes,cant=10):
     for Id in range(1,cant+1):
         thread = Th(Id,printRes,cant)
         thread.start()
-        sleep(5)
+        sleep(1)
     if printStatus:print('TIEMPO OK... +%d'%cant)
 
 if __name__ == "__main__":

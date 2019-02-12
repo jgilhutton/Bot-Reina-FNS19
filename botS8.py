@@ -30,7 +30,7 @@ def vote():
     try:
         resultados = search('(?<={"status":")ok(?="})',res.text).group()
     except Exception as e:
-        print('[-] S8 %s'%e)
+        print(e)
         return res.status_code,e 
     return res.status_code,resultados
 
@@ -58,7 +58,7 @@ def main(printStatus,printRes,cant=10):
     for Id in range(1,cant+1):
         thread = Th(Id,printRes,cant)
         thread.start()
-        sleep(5)
+        sleep(1)
     if printStatus:print('S8 OK... +%d'%cant)
 
 if __name__ == "__main__":

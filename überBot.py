@@ -21,6 +21,7 @@ class Th(threading.Thread):
         
 try:
     while True:
+        print('='*50)
         threadDN,threadZONDA,threadDDC,threadDLP,threadDM,threadS8,threadDH,threadTPO = map(Th,botList)
 
         callDict = {'all':lambda: [callDict[x]() for x in callDict if (x!='all' and not x.isdigit())],'TPO':threadTPO.start,'DDC':threadDDC.start,'DN':threadDN.start,'DLP':threadDLP.start,'DM':threadDM.start,'ZONDA':threadZONDA.start,'S8':threadS8.start,'DH':threadDH.start}
@@ -43,10 +44,11 @@ try:
         for t in ts:
             t.join()
 
-        sleep(10)
-        tanda+=1
-        print('='*50)
+        while True:
+            if all([not x.isAlive() for x in ts]): break
+            else: sleep(1)
         
+        tanda+=1
         if cantidad:
             exit()
 

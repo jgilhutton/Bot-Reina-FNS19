@@ -49,7 +49,7 @@ def main(printStatus,printRes,cant=10):
     for Id in range(1,cant+1):
         thread = Th(Id,printRes,cant)
         thread.start()
-        sleep(5)
+        sleep(1)
     if printStatus:print('DDC OK... +%d'%cant)
 
 if __name__ == "__main__":

@@ -44,9 +44,6 @@ Por si no lo saben, a menos que todo el pueblo chimbero esté votando todo el d�
 # Curiosidades:
 - Al día 7 de febrero del 2019, el sitio web del Diario La ventana, http://diariolaventana.com, tiene implementada la votación de forma tal que cada voto emitido no tiene correspondencia con ninguna de las candidatas.
 En el código HTML de la encuesta, cada candidata debería tener un Id asociado con el cuál enviarle la petición de voto al servidor y así sumar +1 a la opción correspondiente a dicho Id. En la actualidad, en la encuesta de dicho diario, todas las candidatas tienen el mismo Id: "VOTAR". En definitiva, no importa en qué opción haga click el usuario; al Diario La Ventana lo único que le llega es un mensaje que dice "VOTAR".
-- Cerca del día 12 de febrero, el problema anterior fue solucionado. Aun asi, Diario La Ventana no mencionó el inconveniente en ningún momento. (_Se hicieron los boludos_ en criollo antiguo)
-- El día 14 de febrero, la encuesta del Diario El Zonda, devuelve códigos 500 de error en el server.
-- A partir del 13 de febrero, Dame Noticias no muestra los resultados en la página. 
 
 El código:
 ```
@@ -57,7 +54,9 @@ debería ser, por ejemplo:
 <input name="voto" type="submit" value="18" title="VOTAR" />
 ```
 
-- ...
+- Cerca del día 12 de febrero, el problema anterior fue solucionado. Aun asi, Diario La Ventana no mencionó el inconveniente en ningún momento. (_Se hicieron los boludos_ en criollo antiguo)
+- El día 14 de febrero, la encuesta del Diario El Zonda, devuelve códigos 500 de error en el server.
+- A partir del 13 de febrero, Dame Noticias no muestra los resultados en la página. 
 
 # Nota final:
 

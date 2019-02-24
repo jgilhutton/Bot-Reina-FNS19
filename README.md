@@ -1,7 +1,7 @@
 Te la hago corta:
   Bot que vota por la candidata de Valle Fértil para reina del sol en la FNS19
 
-> EDIT 23/02/19: Efectivamente, en la votación on-line ganó la de Valle Fértil. En segundo lugar, la de Chimbas. Que no puedan proteger algo como esto, en el año **2019**, es un verdadero desastre. Sin nada más que decir, archivo el repositorio.
+> EDIT 23/02/19: Efectivamente, en la votación on-line ganó la de Valle Fértil. En segundo lugar, la de Chimbas. Es un verdadero desastre que no puedan proteger algo como esto en el año **2019**. Sin nada más que decir, archivo el repositorio.
 
 # Considerando:
 

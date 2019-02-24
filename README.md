@@ -58,6 +58,7 @@ debería ser, por ejemplo:
 - El día 14 de febrero, la encuesta del Diario El Zonda, devuelve códigos 500 de error en el server.
 - A partir del 13 de febrero, Dame Noticias no muestra los resultados en la página. 
 - 22 de Febrero. Los diarios han ido cayendo uno por uno, algunos por problemas de servidor, otros por otras razones. El único que no entrega problemas es DDC. Ya queda poco para ver qué pasa
+- Bueno... llegó la hora gente. En unos minutos se vota.
 
 # Nota final:
 

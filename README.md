@@ -1,6 +1,8 @@
 Te la hago corta:
   Bot que vota por la candidata de Valle Fértil para reina del sol en la FNS19
 
+> EDIT 23/02/19: Efectivamente, en la votación on-line ganó la de Valle Fértil. En segundo lugar, la de Chimbas. Que no puedan proteger algo como esto, en el año **2019**, es un verdadero desastre. Sin nada más que decir, archivo el repositorio.
+
 # Considerando:
 
 - Que el martes 5 de febrero del 2019 se habilitó la votación para elegir la reina de la fiesta nacional del sol, en San Juan;
@@ -59,6 +61,7 @@ debería ser, por ejemplo:
 - A partir del 13 de febrero, Dame Noticias no muestra los resultados en la página. 
 - 22 de Febrero. Los diarios han ido cayendo uno por uno, algunos por problemas de servidor, otros por otras razones. El único que no entrega problemas es DDC. Ya queda poco para ver qué pasa
 - Bueno... llegó la hora gente. En unos minutos se vota.
+- Jejejeje... que desastre, por favor...
 
 # Nota final:
 

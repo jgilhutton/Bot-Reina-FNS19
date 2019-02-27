@@ -11,7 +11,7 @@ Te la hago corta:
 - Que, a simple vista, la única medida implementada para evitar más de un voto por persona es la instalación de una cookie en el browser del cliente;
 - Que, como toda medida de seguridad del lado del cliente, la implementación de una cookie falla catastróficamente;
 
-# El Comité Provincial Contra la Pelotudez Informática de las Autoridades Sanjuaninas (CPCPIS) Resuelve:
+# Resuelvo:
 
 - Art1: Implementar un Bot para votar en las encuestas de cada diario digital.
 - Art2: Elegir a la candidata de Valle Fértil para cada voto emitido por este Bot, sin alguna razón en especial. 
